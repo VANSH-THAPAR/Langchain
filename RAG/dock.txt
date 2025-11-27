@@ -1,0 +1,193 @@
+# PRODUCT MANUAL: AETHER-7 SMART HOME HUB
+# DOCUMENT VERSION: 4.2.1
+# DATE: 2025-11-24
+# CLASSIFICATION: PUBLIC
+
+---
+
+## SECTION 1: INTRODUCTION
+Welcome to the Aether-7 Smart Home Hub. This device is designed to centralize your home automation experience.
+The Aether-7 acts as a bridge between your Wi-Fi network and Zigbee, Z-Wave, and Matter devices.
+Unlike previous generations, the Aether-7 processes all voice commands locally on the device using the Neural-X chip.
+This ensures that your voice data never leaves your home, providing a significant privacy upgrade over cloud-based assistants.
+The device features a 7-inch OLED touch display with a resolution of 1920x1080.
+It includes dual front-facing speakers and a far-field microphone array capable of detecting voice commands from up to 30 feet away.
+The chassis is made from recycled aluminum and includes a non-slip rubber base.
+Power is supplied via a USB-C PD adapter (included in the box).
+
+## SECTION 2: IMPORTANT SAFETY WARNINGS
+1. Do not submerge the Aether-7 in water. It is IP54 rated (splash resistant) but not waterproof.
+2. Do not block the ventilation grills on the rear of the unit. Overheating may cause the device to shut down.
+3. Use only the provided USB-C power adapter. Third-party adapters with less than 45W output will result in "Low Power" warnings.
+4. Keep the device away from direct heat sources like radiators or stove tops.
+5. The device contains a small lithium-ion backup battery. Do not puncture the device.
+6. If the device emits smoke or a strange odor, disconnect power immediately and contact support.
+7. Do not attempt to open the casing. There are no user-serviceable parts inside.
+8. Listening to audio at maximum volume for extended periods may damage the speakers.
+9. Ensure the power cord is not a tripping hazard.
+10. Keep small accessories away from children under 3 years old.
+
+## SECTION 3: INITIAL SETUP GUIDE
+Step 1: Unbox the device and place it on a flat, stable surface.
+Step 2: Plug the USB-C cable into the port labeled "POWER" on the back.
+Step 3: Connect the adapter to a wall outlet. The Aether logo will appear on the screen.
+Step 4: Wait for the boot sequence (approximately 45 seconds).
+Step 5: When the "Welcome" screen appears, tap "Get Started".
+Step 6: Select your language from the list.
+Step 7: The device will scan for available Wi-Fi networks. Select your network.
+Step 8: Enter your Wi-Fi password using the on-screen keyboard.
+Step 9: The device will check for firmware updates. This may take up to 10 minutes.
+Step 10: Once updated, you will be asked to create or log in to your Aether account.
+Step 11: You can link your account using the Aether Mobile App (available on iOS and Android).
+Step 12: Scan the QR code displayed on the screen with the mobile app.
+Step 13: Assign the device to a room (e.g., "Living Room", "Kitchen").
+Step 14: The setup is complete. You can now say "Hey Aether" to test the voice assistant.
+
+## SECTION 4: CONNECTING PERIPHERALS
+The Aether-7 supports up to 128 connected devices.
+To add a new device, go to Settings -> Devices -> Add New.
+Select the device type (Light, Lock, Sensor, Camera, Thermostat).
+Put the peripheral device into pairing mode (consult the peripheral's manual).
+The Aether-7 will auto-detect the device within 60 seconds.
+If the device is a Zigbee bulb, ensure it is within 20 feet of the hub during pairing.
+If the device is a Z-Wave lock, you may need to enter the DSK code found on the lock's packaging.
+For Matter devices, scan the Matter QR code using the Aether-7's built-in camera (located on the top bezel).
+You can rename devices after pairing (e.g., change "Bulb-X99" to "Reading Lamp").
+Groups can be created to control multiple devices at once.
+Example: Create a group called "Movie Mode" that dims lights and closes blinds.
+
+## SECTION 5: TROUBLESHOOTING AND ERROR CODES
+Below is a list of common error codes and their solutions.
+
+Error 101: No Network Connection
+- Cause: The Wi-Fi signal is too weak or the router is offline.
+- Fix: Move the hub closer to the router or restart your modem.
+
+Error 102: Authentication Failed
+- Cause: Incorrect password or server timeout.
+- Fix: Re-enter your password. If the issue persists, check the server status page.
+
+Error 205: Zigbee Interference
+- Cause: Too many devices on the same channel or interference from a 2.4GHz router.
+- Fix: Go to Settings -> Advanced -> Zigbee Channel and select "Auto-Optimize".
+
+Error 300: Update Failed
+- Cause: Internet connection dropped during download.
+- Fix: Restart the device and try the update again manually via Settings -> System.
+
+Error 404: Voice Module Not Ready
+- Cause: The Neural-X chip failed to initialize.
+- Fix: Perform a hard reset by holding the power button for 10 seconds.
+
+Error 500: Overheating
+- Cause: Internal temperature exceeded 75°C.
+- Fix: Unplug the device and let it cool down for 30 minutes. Ensure vents are clear.
+
+Error 601: Database Corruption
+- Cause: Power loss during a write operation.
+- Fix: You must perform a factory reset. All local data will be lost.
+
+## SECTION 6: FACTORY RESET PROCEDURE
+Warning: This action cannot be undone.
+1. Go to Settings.
+2. Scroll down to "System".
+3. Tap "Advanced Options".
+4. Select "Factory Reset".
+5. Enter your 4-digit PIN (default is 0000).
+6. Confirm the action by tapping "Erase Everything".
+7. The device will reboot and return to the initial setup screen.
+
+## SECTION 7: WARRANTY INFORMATION
+The Aether-7 comes with a 1-year limited manufacturer warranty.
+The warranty covers defects in materials and workmanship.
+The warranty does NOT cover accidental damage, water damage, or unauthorized modifications.
+To make a claim, visit aether-home.com/support with your serial number.
+The serial number is located on the bottom of the device and in the Settings menu.
+Extended warranty (AetherCare+) is available for purchase within 30 days of activation.
+AetherCare+ extends coverage to 3 years and includes accidental damage protection.
+
+## SECTION 8: FAQ (FREQUENTLY ASKED QUESTIONS)
+Q: Can I use the Aether-7 without an internet connection?
+A: Yes, basic local control of Zigbee/Z-Wave devices works offline. Voice commands work offline for local devices. Remote access requires internet.
+
+Q: Does it support Apple HomeKit?
+A: Yes, via the Matter integration.
+
+Q: Can I change the wake word?
+A: Currently, only "Hey Aether" is supported. Custom wake words are coming in firmware v5.0.
+
+Q: How do I clean the screen?
+A: Use a microfiber cloth. Do not use harsh chemicals or glass cleaners.
+
+Q: The screen is too bright at night. What can I do?
+A: Enable "Night Mode" in Settings -> Display. This turns the screen off when the room is dark.
+
+Q: Can I use Bluetooth speakers?
+A: Yes, you can pair external Bluetooth speakers in the Audio settings.
+
+## SECTION 9: SYSTEM LOG DUMP (SAMPLE DATA FOR ANALYSIS)
+[LOG-001] 2025-11-24 08:00:01 [INFO] System boot initiated. Kernel 5.15.
+[LOG-002] 2025-11-24 08:00:02 [INFO] Loading drivers... Audio, Display, WiFi, Zigbee.
+[LOG-003] 2025-11-24 08:00:05 [INFO] Neural-X chip initialized successfully.
+[LOG-004] 2025-11-24 08:00:10 [WARN] WiFi signal strength low (-85dBm).
+[LOG-005] 2025-11-24 08:00:12 [INFO] Connected to SSID "Home_Network". IP: 192.168.1.45.
+[LOG-006] 2025-11-24 08:01:00 [INFO] User interaction: Screen tap.
+[LOG-007] 2025-11-24 08:02:30 [INFO] Voice command detected: "Turn on kitchen lights".
+[LOG-008] 2025-11-24 08:02:31 [INFO] Intent resolved: SET_STATE (Device: Kitchen_Light, State: ON).
+[LOG-009] 2025-11-24 08:02:31 [INFO] Zigbee command sent to node 0x4F.
+[LOG-010] 2025-11-24 08:02:32 [INFO] Zigbee ack received. Success.
+[LOG-011] 2025-11-24 09:15:00 [ERROR] Connection lost to device "Front_Door_Sensor".
+[LOG-012] 2025-11-24 09:15:05 [INFO] Retrying connection to "Front_Door_Sensor"...
+[LOG-013] 2025-11-24 09:15:10 [INFO] Connection restored. Signal strength: 45%.
+[LOG-014] 2025-11-24 10:00:00 [INFO] Scheduled task: Check for firmware updates.
+[LOG-015] 2025-11-24 10:00:02 [INFO] Server response: No updates available.
+[LOG-016] 2025-11-24 10:30:00 [INFO] Ambient light sensor triggered Night Mode OFF.
+[LOG-017] 2025-11-24 11:00:00 [INFO] Memory usage check: 45% used.
+[LOG-018] 2025-11-24 12:00:00 [INFO] CPU temperature: 42°C. Normal.
+[LOG-019] 2025-11-24 13:00:00 [WARN] Packet loss detected on interface wlan0.
+[LOG-020] 2025-11-24 13:00:05 [INFO] Interface wlan0 reset successful.
+[LOG-021] 2025-11-24 14:00:00 [INFO] Backup routine started.
+[LOG-022] 2025-11-24 14:02:00 [INFO] Backup uploaded to local storage. Size: 45MB.
+[LOG-023] 2025-11-24 15:00:00 [INFO] User interaction: Volume adjusted to 60%.
+[LOG-024] 2025-11-24 15:05:00 [INFO] Music streaming service "Spotify" launched.
+[LOG-025] 2025-11-24 15:30:00 [INFO] Music playback paused.
+[LOG-026] 2025-11-24 16:00:00 [ERROR] Failed to sync with calendar service.
+[LOG-027] 2025-11-24 16:00:01 [INFO] Error detail: API rate limit exceeded.
+[LOG-028] 2025-11-24 17:00:00 [INFO] Thermostat "Hallway" reported temp 22°C.
+[LOG-029] 2025-11-24 18:00:00 [INFO] Motion detected in "Living Room".
+[LOG-030] 2025-11-24 18:00:01 [INFO] Automation triggered: "Evening Lights".
+[LOG-031] 2025-11-24 18:00:02 [INFO] Scene applied successfully.
+[LOG-032] 2025-11-24 19:00:00 [INFO] Door lock "Front_Door" status changed to LOCKED.
+[LOG-033] 2025-11-24 20:00:00 [INFO] User requested "Goodnight" routine.
+[LOG-034] 2025-11-24 20:00:01 [INFO] Turning off all lights.
+[LOG-035] 2025-11-24 20:00:02 [INFO] Arming security system.
+[LOG-036] 2025-11-24 20:00:03 [INFO] Routine complete.
+[LOG-037] 2025-11-24 21:00:00 [INFO] System idle. Entering low power mode.
+[LOG-038] 2025-11-24 22:00:00 [INFO] Heartbeat check... System OK.
+[LOG-039] 2025-11-24 23:00:00 [INFO] Heartbeat check... System OK.
+[LOG-040] 2025-11-25 00:00:00 [INFO] Log rotation initiated.
+
+## SECTION 10: LEGAL DISCLAIMER
+The Aether-7 uses advanced machine learning algorithms.
+By using this device, you agree to the Terms of Service found at aether-home.com/terms.
+Aether Inc. is not responsible for third-party device malfunctions.
+This device utilizes open-source software.
+A list of licenses can be found in Settings -> About -> Legal.
+FCC Compliance Statement:
+This device complies with Part 15 of the FCC Rules.
+Operation is subject to the following two conditions:
+(1) This device may not cause harmful interference, and
+(2) This device must accept any interference received, including interference that may cause undesired operation.
+Changes or modifications not expressly approved by the party responsible for compliance could void the user's authority to operate the equipment.
+Manufactured in Vietnam.
+Imported by Aether Logistics, 123 Tech Park Blvd, San Francisco, CA.
+
+## SECTION 11: END OF DOCUMENT
+This document is confidential property of Aether Inc. until public release.
+Do not distribute without written consent.
+If found, please return to the IT Security department.
+Doc ID: AE7-MAN-421
+Checksum: A1B2C3D4E5
+Verified by: J. Smith, Lead Engineer
+Approved by: K. Doe, Product Manager
+End of file.
